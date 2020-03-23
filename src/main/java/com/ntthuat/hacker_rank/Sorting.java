@@ -1,8 +1,5 @@
 package com.ntthuat.hacker_rank;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
 
 /**
  * https://www.hackerrank.com/domains/algorithms/arrays-and-sorting
@@ -156,4 +153,5 @@ public class Sorting {
 		array[i] = array[j];
 		array[j] = tmp;
 	}
+
 }

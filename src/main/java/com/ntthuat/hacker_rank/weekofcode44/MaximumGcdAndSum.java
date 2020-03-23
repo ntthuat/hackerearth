@@ -1,6 +1,5 @@
 package com.ntthuat.hacker_rank.weekofcode44;
 
-import java.math.BigInteger;
 import java.util.HashSet;
 import java.util.Set;
 
