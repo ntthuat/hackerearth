@@ -1,4 +1,4 @@
-package com.ntthuat.tmaTest;
+package com.ntthuat.tma_test;
 
 public class DBStma {
 
