@@ -34,6 +34,10 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-kubernetes-config")
     implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
 
+    implementation("org.apache.commons:commons-collections4:4.4")
+    implementation("org.eclipse.collections:eclipse-collections:10.3.0.M1")
+    implementation("org.openjdk.jmh:jmh-core:1.23")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
         exclude(group = "junit", module = "junit")

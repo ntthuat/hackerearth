@@ -36,32 +36,32 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class XsquareAndTwoStrings {
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String line = br.readLine();
-		int T = Integer.parseInt(line);
-		for (int i = 0; i < T; i++) {
-			String string1 = br.readLine();
-			String string2 = br.readLine();
-			boolean bool = false;
-			
-			ArrayList<String> arrayList1 = new ArrayList<>();
-			while (string1.length()!=0) {
-				String stringCk = string1.substring(0, 1);
-				char charCk = stringCk.charAt(0);
-				int checkChar = string2.indexOf(charCk);
-				if (checkChar!=-1) {
-					bool = true;
-					break;
-				}
-				string1 = string1.replace(stringCk,"");
-			}
-			if (bool) {
-				System.out.println("Yes");
-			} else {
-				System.out.println("No");
-			}
-		}
-		System.out.println("Hello World");
-	}
+  public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    String line = br.readLine();
+    int T = Integer.parseInt(line);
+    for (int i = 0; i < T; i++) {
+      String string1 = br.readLine();
+      String string2 = br.readLine();
+      boolean bool = false;
+
+      ArrayList<String> arrayList1 = new ArrayList<>();
+      while (string1.length() != 0) {
+        String stringCk = string1.substring(0, 1);
+        char charCk = stringCk.charAt(0);
+        int checkChar = string2.indexOf(charCk);
+        if (checkChar != -1) {
+          bool = true;
+          break;
+        }
+        string1 = string1.replace(stringCk, "");
+      }
+      if (bool) {
+        System.out.println("Yes");
+      } else {
+        System.out.println("No");
+      }
+    }
+    System.out.println("Hello World");
+  }
 }
